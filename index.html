@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <i class="fa-brands fa-instagram mr-1"></i>
+                    <span>Instagram</span>
+                </a>
+
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item active">
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Create new post
+                            </button>
+                        </li>
+
+                        <li class="btn btn-secondary nav-item dropdown">
+                            <a class="text-white text-decoration-none dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-gear"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item btn btn-danger" href="#">Log out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Caption:</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Add the caption of your post here"></textarea>
+
+                            </div>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                <i class="fa-solid fa-camera"></i>
+                            </button>
+                            <button type="button" class="btn btn-success">
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                            </button>
+                        </div>
+
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success">Publish</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container text-center">
+            <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+                </li>
+
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                    <div class="row align-items-start">
+                        <div class="col">
+                            <img src="https://www.nolodejesalazar.es/wp-content/uploads/sites/26/2021/03/GettyImages-1144717811-e1582815778452.jpg?w=700" class="img-thumbnail" alt="...">
+                        </div>
+                        <div class="col">
+                            <img src="https://cdn.pixabay.com/photo/2017/02/15/12/12/cat-2068462_640.jpg" class="img-thumbnail" alt="...">
+                        </div>
+                        <div class="col">
+                            <img src="https://cdn.onemars.net/sites/nutro_es_NkyIN_B9cV/image/gettyimages-175925832_1615921990607.jpeg" class="img-thumbnail" alt="...">
+                        </div>
+                    </div>
+                    <div class="row align-items-start">
+                        <div class="col">
+                            <img src="https://cdn.onemars.net/sites/nutro_es_NkyIN_B9cV/image/gettyimages-175925832_1615921990607.jpeg" class="img-thumbnail" alt="...">
+                        </div>
+                        <div class="col">
+                            <img src="https://www.elespectador.com/resizer/o4Lz15qDOAldZR1fBi3OaSp0wPM=/920x613/filters:quality(60):format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/elespectador/C4NLGPRAYBDJLETS2ELJTJLA4U.jpg" class="img-thumbnail" alt="...">
+                        </div>
+                        <div class="col">
+                            <img src="https://cdn.pixabay.com/photo/2017/02/15/12/12/cat-2068462_640.jpg" class="img-thumbnail" alt="...">
+                        </div>
+                    </div>
+                    <div class="row align-items-start">
+                        <div class="col">
+                            <img src="https://cdn.pixabay.com/photo/2017/02/15/12/12/cat-2068462_640.jpg" class="img-thumbnail" alt="...">
+                        </div>
+                        <div class="col">
+                            <img src="https://www.elespectador.com/resizer/o4Lz15qDOAldZR1fBi3OaSp0wPM=/920x613/filters:quality(60):format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/elespectador/C4NLGPRAYBDJLETS2ELJTJLA4U.jpg" class="img-thumbnail" alt="...">
+                        </div>
+                        <div class="col">
+                            <img src="https://www.nolodejesalazar.es/wp-content/uploads/sites/26/2021/03/GettyImages-1144717811-e1582815778452.jpg?w=700" class="img-thumbnail" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                    <div class="border border-dark p-1 mb-1">
+                        <div class="d-flex justify-content-start">
+                            <h5>MY CRAZY CAT SPARK!</h5>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <h5>08/28</h5>
+                        </div>
+                    </div>
+                    <div class="border border-dark p-1 mb-1 bg-dark">
+                        <img src="https://www.nolodejesalazar.es/wp-content/uploads/sites/26/2021/03/GettyImages-1144717811-e1582815778452.jpg?w=700" class="img-fluid" alt="">
+                    </div>
+                    <div class="border border-dark p-1 mb-1 d-flex justify-content-right">
+                        <h6>204likes</h6>
+                    </div>
+                    <p class="lead d-flex justify-content-right">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vero id deserunt consectetur quod sapiente sed blanditiis cum, omnis minima.
+                    </p>
+                    <div class="border border-dark p-1 mb-1">
+                        <div class="d-flex justify-content-start">
+                            <h5>WHAT THE SAME CAT?</h5>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <h5>08/27</h5>
+                        </div>
+                    </div>
+                    <div class="border border-dark p-1 mb-1 bg-dark">
+                        <img src="https://www.nolodejesalazar.es/wp-content/uploads/sites/26/2021/03/GettyImages-1144717811-e1582815778452.jpg?w=700" class="img-fluid" alt="">
+                    </div>
+                    <div class="border border-dark p-1 mb-1 d-flex justify-content-right">
+                        <h6>204likes</h6>
+                    </div>
+                    <p class="lead d-flex justify-content-right">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vero id deserunt consectetur quod sapiente sed blanditiis cum, omnis minima.
+                    </p>
+                    <div class="border border-dark p-1 mb-1">
+                        <div class="d-flex justify-content-start">
+                            <h5>THE SAME FROM BEFORE!</h5>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <h5>08/26</h5>
+                        </div>
+                    </div>
+                    <div class="border border-dark p-1 mb-1 bg-dark">
+                        <img src="https://www.nolodejesalazar.es/wp-content/uploads/sites/26/2021/03/GettyImages-1144717811-e1582815778452.jpg?w=700" class="img-fluid" alt="">
+                    </div>
+                    <div class="border border-dark p-1 mb-1 d-flex justify-content-right">
+                        <h6>200likes</h6>
+                    </div>
+                    <p class="lead d-flex justify-content-right">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vero id deserunt consectetur quod sapiente sed blanditiis cum, omnis minima.
+                    </p>
+                    <div class="border border-dark p-1 mb-1">
+                        <div class="d-flex justify-content-start">
+                            <h5>WHAAAT!</h5>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <h5>08/25</h5>
+                        </div>
+                    </div>
+                    <div class="border border-dark p-1 mb-1 bg-dark">
+                        <img src="https://www.nolodejesalazar.es/wp-content/uploads/sites/26/2021/03/GettyImages-1144717811-e1582815778452.jpg?w=700" class="img-fluid" alt="">
+                    </div>
+                    <div class="border border-dark p-1 mb-1 d-flex justify-content-right">
+                        <h6>304likes</h6>
+                    </div>
+                    <p class="lead d-flex justify-content-right">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vero id deserunt consectetur quod sapiente sed blanditiis cum, omnis minima.
+                    </p>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+
+</html>
